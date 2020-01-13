@@ -1,4 +1,5 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+# Mac.
+.DS_STORE
+
+# Node.
+node_modules/
