@@ -16,7 +16,7 @@
 
 //temp
 section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 article {
@@ -32,8 +32,4 @@ h6 {
     font-family: $font_title;
     font-size: 50px;
     color: $dark_grey;
-}
-
-#startpage {
-    background-color: blue;
 }
