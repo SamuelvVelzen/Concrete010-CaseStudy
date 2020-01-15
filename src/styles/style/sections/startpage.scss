@@ -1,2 +1,59 @@
 #startpage {
+    padding-top: 82px;
+
+    .split_left {
+        .title {
+            text-align: left;
+        }
+
+        .yellowUnderline {
+            width: 50%;
+            margin-left: $spacePer5;
+        }
+
+        .logos {
+            margin-left: $spacePer5;
+            margin-right: $spacePer5;
+
+            display: flex;
+            justify-content: space-between;
+
+            .spanImage {
+                height: 100px;
+                width: 150px;
+
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                &.versbeton {
+                    background-image: url('./../images/logos/versbeton.png');
+                }
+
+                &.rotterdam {
+                    background-image: url('./../images/logos/gemeenterotterdam.png');
+                }
+
+                &.open {
+                    width: 100px;
+                    background-image: url('./../images/logos/openrotterdam.png');
+                }
+            }
+        }
+    }
+
+    .split_right {
+        .backgroundcolor {
+            background-color: $yellow;
+        }
+
+        .spanImage {
+            height: 75vh;
+            width: 100vh;
+
+            background-image: url('./../images/rotterdamskyline.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
 }
