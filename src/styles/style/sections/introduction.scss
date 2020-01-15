@@ -1,0 +1,73 @@
+#introduction {
+    .fillImage {
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+
+    .vector {
+        position: absolute;
+        height: 41vh;
+        width: 100%;
+        max-width: 250px;
+
+        background-image: url('./../images/vector.svg');
+        background-size: 75%;
+        background-repeat: no-repeat;
+    }
+
+    .assignment {
+        .fillImage {
+            height: 200px;
+            width: 200px;
+
+            background-image: url('./../images/logos/versbeton.png');
+            background-size: 200px 100px;
+
+            right: -100px;
+            top: -15px;
+        }
+
+        .vector {
+            right: 20%;
+        }
+    }
+
+    .question {
+        .fillImage {
+            height: 400px;
+            width: 400px;
+
+            background-image: url('./../images/questionmark.png');
+            opacity: 0.3;
+
+            right: -50px;
+            bottom: -100px;
+        }
+
+        .vector {
+            right: 10%;
+        }
+    }
+
+    .issue {
+        .vector {
+            right: 0;
+        }
+    }
+
+    .situation {
+        .vector {
+            right: 50%;
+        }
+    }
+
+    .waveup {
+        width: 100%;
+        height: 100px;
+
+        background-image: url('./../images/blobs/waveup.png');
+        background-size: 100% 100px;
+
+        margin-top: auto;
+    }
+}
