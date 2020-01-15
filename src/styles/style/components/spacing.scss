@@ -1,0 +1,24 @@
+.split {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &_left,
+    &_right {
+        flex: 1;
+        position: relative;
+
+        h2 {
+            margin: 0 $spacePer5;
+            text-align: right;
+        }
+    }
+
+    &_right {
+        margin-right: $spacePer10;
+
+        p {
+            margin-left: $spacePer5;
+        }
+    }
+}
