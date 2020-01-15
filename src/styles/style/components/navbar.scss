@@ -1,0 +1,26 @@
+.nav {
+    background-color: $dark;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+    &_logo {
+    }
+
+    &_list {
+        padding: $buttonspace;
+        margin-left: auto;
+
+        &_item {
+            display: inline-block;
+            padding: $buttonspace;
+
+            &_link {
+                text-decoration: none;
+                color: $light;
+            }
+        }
+    }
+}
