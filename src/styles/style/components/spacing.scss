@@ -1,5 +1,6 @@
 .split {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
 
@@ -15,10 +16,11 @@
     }
 
     &_right {
-        margin-right: $spacePer10;
+        margin-right: $spacePer5;
 
         p {
             margin-left: $spacePer5;
+            margin-right: $spacePer5;
         }
     }
 }
