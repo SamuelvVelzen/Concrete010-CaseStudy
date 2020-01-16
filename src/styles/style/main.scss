@@ -8,6 +8,7 @@
     box-sizing: border-box;
     letter-spacing: 2px;
     font-family: $font_body;
+    font-size: 20px;
 }
 
 .spanImage {
@@ -40,4 +41,14 @@ h6,
 
 .bigTitle {
     font-size: 96px;
+}
+
+.titleHeader {
+    margin: 0 $spacePer5;
+    margin-bottom: $spacePer2;
+    text-align: center;
+
+    .yellowUnderline {
+        width: 50%;
+    }
 }
