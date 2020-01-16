@@ -2,8 +2,34 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 0$spacePer5;
+
+    padding-bottom: $spacePer2;
 
     .card {
         width: 30%;
+        border-radius: $radius;
+        background-color: $light_grey;
+
+        &_image {
+            width: 100%;
+            height: auto;
+            border-radius: $radius;
+        }
+
+        &_header {
+            text-transform: uppercase;
+            color: $dark_grey;
+            font-weight: 900;
+            font-style: italic;
+            font-size: 24px;
+            padding: $space2;
+        }
+
+        &_description {
+            color: $dark_grey;
+            padding: $space2;
+            padding-top: 0;
+        }
     }
 }
