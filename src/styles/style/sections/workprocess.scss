@@ -1,0 +1,12 @@
+#workprocess {
+    background-color: $dark;
+    opacity: 0.8;
+
+    &.split {
+        align-items: initial;
+    }
+
+    h2 {
+        color: $light_grey;
+    }
+}
