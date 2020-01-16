@@ -29,9 +29,14 @@ h3,
 h4,
 h5,
 h6,
-.title {
+.title,
+.bigTitle {
     font-family: $font_title;
     font-size: 50px;
     color: $dark_grey;
     font-weight: 900;
+}
+
+.bigTitle {
+    font-size: 96px;
 }
