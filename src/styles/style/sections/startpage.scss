@@ -43,17 +43,34 @@
     }
 
     .split_right {
-        .backgroundcolor {
-            background-color: $yellow;
-        }
+        .picturegroup {
+            position: relative;
 
-        .spanImage {
-            height: 75vh;
-            width: 100vh;
+            .backgroundcolor {
+                height: 40vh;
+                width: 60vh;
+                background-color: $yellow;
 
-            background-image: url('./../images/rotterdamskyline.png');
-            background-size: contain;
-            background-repeat: no-repeat;
+                position: absolute;
+                top: -3.5%;
+                right: 5%;
+
+                margin: 0 auto;
+
+                z-index: -1;
+            }
+
+            .spanImage {
+                height: 75vh;
+                width: 60vh;
+
+                margin: 0 auto;
+                padding-top: 40%;
+
+                background-image: url('./../images/rotterdamskyline.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
         }
     }
 }
