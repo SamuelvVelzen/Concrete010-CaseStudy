@@ -1,0 +1,19 @@
+#workprocess {
+    background-color: $dark;
+    opacity: 0.8;
+
+    &.split {
+        align-items: initial;
+    }
+
+    .split {
+        &_right {
+            margin-right: 0;
+        }
+    }
+
+    h2 {
+        color: $light_grey;
+        margin-top: $spacePer10;
+    }
+}
