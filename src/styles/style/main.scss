@@ -45,10 +45,20 @@ h6,
 
 .titleHeader {
     margin: 0 $spacePer5;
-    margin-bottom: $spacePer2;
+    margin-bottom: $spacePer1;
     text-align: center;
+    position: relative;
 
-    .yellowUnderline {
-        width: 50%;
+    h2 {
+        .yellowUnderline {
+            width: 100%;
+            left: 10px;
+        }
+
+        margin-bottom: $space5 !important;
+    }
+
+    .description {
+        color: $light_grey;
     }
 }

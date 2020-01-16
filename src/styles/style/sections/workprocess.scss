@@ -24,5 +24,71 @@
 
     h2 {
         color: $light_grey;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+    .targets {
+        background-image: linear-gradient(
+            to right,
+            rgba($grey, 0.8),
+            rgba($dark, 0.8)
+        );
+        z-index: -1;
+
+        &.split {
+            flex-wrap: nowrap;
+        }
+
+        .split {
+            &_right {
+                margin-right: 0;
+
+                .titleHeader {
+                    margin-left: $spacePer2;
+
+                    h2 {
+                        margin-left: 0;
+                    }
+
+                    .description {
+                        margin: 0;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .users {
+        background-image: linear-gradient(
+            to right,
+            rgba($dark, 0.8),
+            rgba($grey, 0.8)
+        );
+        z-index: -1;
+
+        .split {
+            &_right {
+                margin-right: 0;
+            }
+
+            &_left {
+                .titleHeader {
+                    margin-left: $spacePer2;
+
+                    h2 {
+                        margin-left: 0;
+                    }
+
+                    .description {
+                        margin: 0;
+                        text-align: left;
+                    }
+                }
+            }
+        }
     }
 }
