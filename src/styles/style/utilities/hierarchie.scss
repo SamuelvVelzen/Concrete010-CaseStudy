@@ -1,0 +1,76 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title,
+.bigTitle,
+.smallTitle {
+    font-family: $font_title;
+    font-size: 50px;
+    color: $dark_grey;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.bigTitle {
+    font-size: 96px;
+}
+
+.smallTitle {
+    font-size: 24px;
+}
+
+.titleHeader {
+    margin: 0 $spacePer5;
+    margin-bottom: $spacePer1;
+    text-align: center;
+    position: relative;
+
+    h2 {
+        .yellowUnderline {
+            width: 100%;
+            left: 10px;
+        }
+
+        margin-bottom: $space5 !important;
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+
+        &.smallTitle {
+            margin-bottom: $space2 !important;
+        }
+    }
+
+    &.left {
+        margin-left: $spacePer2;
+
+        h2 {
+            margin-left: 0;
+        }
+
+        .description {
+            margin: 0;
+            text-align: left;
+        }
+    }
+
+    &.right {
+        margin-right: $spacePer2;
+
+        h2 {
+            margin-right: 0;
+        }
+
+        .description {
+            margin: 0;
+            text-align: right;
+        }
+    }
+
+    .description {
+        color: $light_grey;
+    }
+}

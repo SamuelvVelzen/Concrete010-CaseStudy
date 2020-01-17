@@ -24,41 +24,32 @@ article {
     height: 50vh;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.title,
-.bigTitle {
-    font-family: $font_title;
-    font-size: 50px;
-    color: $dark_grey;
-    font-weight: 900;
-    font-style: italic;
-}
+.logos {
+    margin-left: $spacePer5;
+    margin-right: $spacePer5;
 
-.bigTitle {
-    font-size: 96px;
-}
+    display: flex;
+    justify-content: space-between;
 
-.titleHeader {
-    margin: 0 $spacePer5;
-    margin-bottom: $spacePer1;
-    text-align: center;
-    position: relative;
+    .spanImage {
+        height: 100px;
+        width: 150px;
 
-    h2 {
-        .yellowUnderline {
-            width: 100%;
-            left: 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &.versbeton {
+            background-image: url('./../images/logos/versbeton.png');
         }
 
-        margin-bottom: $space5 !important;
-    }
+        &.rotterdam {
+            background-image: url('./../images/logos/gemeenterotterdam.png');
+        }
 
-    .description {
-        color: $light_grey;
+        &.open {
+            width: 100px;
+            background-image: url('./../images/logos/openrotterdam.png');
+        }
     }
 }
