@@ -1,4 +1,14 @@
 #results {
+    .wavedown {
+        width: 100%;
+        height: 250px;
+
+        background-image: url('./../images/blobs/wavedown.png');
+        background-size: 100% 100%;
+
+        margin-top: auto;
+    }
+
     .description {
         color: $dark;
     }
@@ -18,6 +28,18 @@
     .logos {
         width: 20%;
         margin: 0 auto;
+        margin-bottom: $spacePer2;
+
+        .spanImage {
+            &.versbeton {
+                height: 150px;
+                width: 200px;
+
+                &small {
+                    margin: auto 0;
+                }
+            }
+        }
     }
 
     .colors {

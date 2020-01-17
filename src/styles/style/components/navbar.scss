@@ -1,12 +1,18 @@
 .nav {
     background-color: $dark;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: fixed;
     width: 100%;
     z-index: 10;
 
     &_logo {
+        background-image: url(./../images/logos/concrete.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        width: 300px;
     }
 
     &_list {
