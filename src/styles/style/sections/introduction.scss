@@ -1,4 +1,8 @@
 #introduction {
+    article {
+        height: 50vh;
+    }
+
     .fillImage {
         position: absolute;
         background-repeat: no-repeat;
@@ -38,6 +42,10 @@
             width: 400px;
 
             background-image: url('./../images/questionmark.png');
+            background-size: contain;
+
+            transform: rotate(10deg);
+
             opacity: 0.3;
 
             right: -50px;
@@ -57,7 +65,10 @@
 
     .situation {
         .vector {
-            right: 50%;
+            right: 0;
+            max-width: 600px;
+            height: 120vh;
+            z-index: -1;
         }
     }
 
