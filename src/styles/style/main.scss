@@ -41,6 +41,10 @@ article {
 
         &.versbeton {
             background-image: url('./../images/logos/versbeton.png');
+
+            &small {
+                background-image: url('./../images/logos/versbetonsmall.png');
+            }
         }
 
         &.rotterdam {
