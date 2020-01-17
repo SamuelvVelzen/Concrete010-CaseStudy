@@ -18,6 +18,18 @@
     .logos {
         width: 20%;
         margin: 0 auto;
+        margin-bottom: $spacePer2;
+
+        .spanImage {
+            &.versbeton {
+                height: 150px;
+                width: 200px;
+
+                &small {
+                    margin: auto 0;
+                }
+            }
+        }
     }
 
     .colors {
