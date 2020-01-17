@@ -61,7 +61,10 @@
 
     .situation {
         .vector {
-            right: 50%;
+            right: 0;
+            max-width: 600px;
+            height: 120vh;
+            z-index: -1;
         }
     }
 
