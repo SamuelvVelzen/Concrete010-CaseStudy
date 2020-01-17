@@ -38,6 +38,10 @@
             width: 400px;
 
             background-image: url('./../images/questionmark.png');
+            background-size: contain;
+
+            transform: rotate(10deg);
+
             opacity: 0.3;
 
             right: -50px;
