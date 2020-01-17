@@ -1,0 +1,21 @@
+#thanks {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    .titleHeader {
+        margin: auto;
+        max-width: $desktop;
+    }
+
+    .logos {
+        margin: 0 auto;
+        max-width: $tablet;
+    }
+
+    .copyright {
+        margin: 0 auto;
+        margin-bottom: $space5;
+    }
+}

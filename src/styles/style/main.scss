@@ -8,6 +8,7 @@
     box-sizing: border-box;
     letter-spacing: 2px;
     font-family: $font_body;
+    font-size: 20px;
 }
 
 .spanImage {
@@ -16,20 +17,39 @@
 
 //temp
 section {
-    min-height: 100vh;
+    padding-top: 82px;
 }
 
 article {
     height: 50vh;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $font_title;
-    font-size: 50px;
-    color: $dark_grey;
+.logos {
+    margin-left: $spacePer5;
+    margin-right: $spacePer5;
+
+    display: flex;
+    justify-content: space-between;
+
+    .spanImage {
+        height: 100px;
+        width: 150px;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &.versbeton {
+            background-image: url('./../images/logos/versbeton.png');
+        }
+
+        &.rotterdam {
+            background-image: url('./../images/logos/gemeenterotterdam.png');
+        }
+
+        &.open {
+            width: 100px;
+            background-image: url('./../images/logos/openrotterdam.png');
+        }
+    }
 }

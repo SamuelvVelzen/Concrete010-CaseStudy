@@ -3,14 +3,17 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    position: relative;
 
     &_left,
     &_right {
         flex: 1;
         position: relative;
 
-        h2 {
-            margin: 0 $spacePer5;
+        h2,
+        .title {
+            margin-left: $spacePer5;
+            margin-right: $spacePer5;
             text-align: right;
         }
     }

@@ -1,0 +1,62 @@
+#workprocess {
+    background-color: $dark;
+    opacity: 0.8;
+
+    &.split {
+        align-items: initial;
+    }
+
+    .split {
+        &_right {
+            margin-right: 0;
+        }
+    }
+
+    h2 {
+        color: $light_grey;
+        margin-top: $spacePer10;
+    }
+}
+
+#research {
+    background-color: $dark;
+    opacity: 0.8;
+
+    h2 {
+        color: $light_grey;
+    }
+
+    .targets {
+        background-image: linear-gradient(
+            to right,
+            rgba($grey, 0.8),
+            rgba($dark, 0.8)
+        );
+        z-index: -1;
+
+        &.split {
+            flex-wrap: nowrap;
+        }
+
+        .split {
+            &_right {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .users {
+        background-image: linear-gradient(
+            to right,
+            rgba($dark, 0.8),
+            rgba($grey, 0.8)
+        );
+        z-index: -1;
+
+        .split {
+            &_right {
+                margin-right: 0;
+            }
+        }
+    }
+}

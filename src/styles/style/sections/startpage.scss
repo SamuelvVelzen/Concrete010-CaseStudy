@@ -1,0 +1,46 @@
+#startpage {
+    .split_left {
+        .title {
+            text-align: left;
+            font-size: 80px;
+            margin: 0 0 0 15%;
+        }
+
+        .yellowUnderline {
+            width: 80%;
+            margin-left: $spacePer5;
+        }
+    }
+
+    .split_right {
+        .picturegroup {
+            position: relative;
+
+            .backgroundcolor {
+                height: 40vh;
+                width: 60vh;
+                background-color: $yellow;
+
+                position: absolute;
+                top: -3.5%;
+                right: 5%;
+
+                margin: 0 auto;
+
+                z-index: -1;
+            }
+
+            .spanImage {
+                height: 75vh;
+                width: 60vh;
+
+                margin: 0 auto;
+                padding-top: 40%;
+
+                background-image: url('./../images/rotterdamskyline.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
