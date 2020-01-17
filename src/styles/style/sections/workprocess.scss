@@ -38,6 +38,11 @@
         );
         z-index: -1;
 
+        img {
+            width: 60%;
+            height: auto;
+        }
+
         &.split {
             flex-wrap: nowrap;
         }
@@ -56,6 +61,11 @@
             rgba($grey, 0.8)
         );
         z-index: -1;
+
+        img {
+            width: 60%;
+            height: auto;
+        }
 
         .split {
             &_right {

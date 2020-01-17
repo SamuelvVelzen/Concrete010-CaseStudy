@@ -1,46 +1,52 @@
 #startpage {
+    height: 100vh;
+
     .split_left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
         .title {
             text-align: left;
             font-size: 80px;
             margin: 0 0 0 15%;
+
+            &:first-of-type {
+                margin-top: auto;
+            }
         }
 
         .yellowUnderline {
             width: 80%;
-            margin-left: $spacePer5;
+        }
+
+        .arrow {
+            margin: auto auto $spacePer1 auto;
+
+            background-image: url(./../images/arrow.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            height: 50px;
+            width: 50px;
         }
     }
 
     .split_right {
-        .picturegroup {
-            position: relative;
+        .spanImage {
+            background-image: url('./../images/rotterdamskyline.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top right;
 
-            .backgroundcolor {
-                height: 40vh;
-                width: 60vh;
-                background-color: $yellow;
+            margin: 0 auto;
+            margin-top: 29%;
 
-                position: absolute;
-                top: -3.5%;
-                right: 5%;
+            height: 500px;
+            width: 365px;
 
-                margin: 0 auto;
-
-                z-index: -1;
-            }
-
-            .spanImage {
-                height: 75vh;
-                width: 60vh;
-
-                margin: 0 auto;
-                padding-top: 40%;
-
-                background-image: url('./../images/rotterdamskyline.png');
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
+            box-shadow: 10px -10px $yellow;
         }
     }
 }
