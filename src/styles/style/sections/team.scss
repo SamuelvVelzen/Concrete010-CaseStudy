@@ -1,4 +1,16 @@
 #team {
+    .teamconcrete {
+        height: 75px;
+        width: auto;
+
+        background-image: url('./../images/logos/concretecolor.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        margin-bottom: $space2;
+    }
+
     .description {
         color: $dark;
     }
