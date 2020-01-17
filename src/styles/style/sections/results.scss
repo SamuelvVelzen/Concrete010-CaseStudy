@@ -13,7 +13,15 @@
         color: $dark;
     }
 
+    .explaination {
+        &.split {
+            align-items: flex-start;
+        }
+    }
+
     .brain {
+        margin-bottom: $spacePer1;
+
         .split {
             &_left {
                 border-radius: 0 $radius $radius 0;
@@ -21,6 +29,8 @@
 
             &_right {
                 margin-right: 0;
+                width: 60%;
+                flex: initial;
             }
         }
     }
