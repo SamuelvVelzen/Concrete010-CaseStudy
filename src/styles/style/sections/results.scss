@@ -1,0 +1,130 @@
+#results {
+    .description {
+        color: $dark;
+    }
+
+    .brain {
+        .split {
+            &_left {
+                border-radius: 0 $radius $radius 0;
+            }
+
+            &_right {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .logos {
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    .colors {
+        .colorsgroup {
+            display: flex;
+            justify-content: space-evenly;
+
+            .color {
+                border-radius: $radius;
+                height: 150px;
+                min-width: 110px;
+                margin-right: $space2;
+
+                &.blue {
+                    flex: 4;
+                    background-color: #0004e3;
+                    border: 5px solid #0004e3;
+                    color: $light_grey;
+                }
+
+                &.yellow {
+                    flex: 3;
+                    background-color: #ffee2e;
+                    border: 5px solid #ffee2e;
+                }
+
+                &.white {
+                    flex: 3;
+                    background-color: $light;
+                    border: 5px solid $light_grey;
+                }
+
+                &.black {
+                    flex: 2;
+                    background-color: #333333;
+                    border: 5px solid #333333;
+                    color: $light_grey;
+                }
+
+                p {
+                    text-align: center;
+                    margin: 0;
+                    margin-top: 120px;
+
+                    &::before {
+                        content: '#';
+                    }
+                }
+            }
+        }
+    }
+
+    .fonts {
+        margin-bottom: $spacePer1;
+
+        .titleHeader {
+            .quote {
+                font-size: 50px;
+                color: grey;
+                opacity: 0.4;
+                text-align: left;
+                margin: 0;
+                width: 115%;
+
+                position: absolute;
+            }
+        }
+
+        .opensans {
+            .description {
+                font-family: $font_title !important;
+            }
+
+            .quote {
+                font-family: $font_title !important;
+                font-weight: 900;
+                left: -7%;
+            }
+        }
+
+        .proxima {
+            margin-right: 0;
+
+            .quote {
+                letter-spacing: 6px;
+            }
+        }
+    }
+
+    .interaction {
+        .split_right,
+        .split_left {
+            display: flex;
+            flex-direction: column;
+
+            .smallTitle {
+                margin: $space2 0;
+            }
+
+            .interactionImage {
+                width: 88%;
+                margin: 0 auto;
+            }
+        }
+
+        .split_right {
+            margin-right: 0;
+        }
+    }
+}
