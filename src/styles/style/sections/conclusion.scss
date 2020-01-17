@@ -1,0 +1,20 @@
+#conclusion {
+    background-color: $dark;
+    opacity: 0.8;
+    padding: $spacePer3;
+
+    display: flex;
+
+    .titleHeader {
+        margin-top: auto;
+        margin-bottom: auto;
+
+        .bigTitle {
+            color: $light_grey;
+        }
+
+        .description {
+            color: $light_grey;
+        }
+    }
+}
