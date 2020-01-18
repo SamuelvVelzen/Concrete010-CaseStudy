@@ -1,20 +1,25 @@
-name: Greet Everyone
+name: build dist to prod
 # This workflow is triggered on pushes to the repository.
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
-    # Job name is Greeting
-    name: Greeting
+    # Job name is gulp-build
+    name: Gulp-build
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+
       # This step uses GitHub's hello-world-javascript-action: https://github.com/actions/hello-world-javascript-action
-      - name: Hello world
-        uses: actions/hello-world-javascript-action@v1
-        with:
-          who-to-greet: "Mona the Octocat"
-        id: hello
+      - name: Compile with Gulp
+        uses: elstudio/actions-js-build/build@v2
+
       # This step prints an output (time) from the previous step's action.
-      - name: Echo the greeting's time
-        run: echo 'The time was ${{ steps.hello.outputs.time }}.'
+      - name: Commit changes
+        uses: elstudio/actions-js-build/commit@v3
+        with:
+          commitMessage: Building to production
