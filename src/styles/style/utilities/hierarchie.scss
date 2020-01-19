@@ -12,10 +12,18 @@ h6,
     color: $dark_grey;
     font-weight: 900;
     font-style: italic;
+
+    &.dark {
+        color: $yellow;
+    }
 }
 
 .bigTitle {
     font-size: 96px;
+
+    &.dark {
+        color: $yellow !important;
+    }
 }
 
 .smallTitle {
@@ -72,5 +80,6 @@ h6,
 
     .description {
         color: $light_grey;
+        margin-bottom: $space2 !important;
     }
 }
