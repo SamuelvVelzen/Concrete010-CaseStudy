@@ -1,6 +1,10 @@
 #workprocess {
     background-color: $dark;
     opacity: 0.8;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
 
     &.split {
         align-items: initial;
@@ -19,6 +23,19 @@
 
     .workprocessImage {
         width: 85%;
+    }
+
+    .arrow {
+        cursor: pointer;
+        margin: auto auto $spacePer3 auto;
+
+        background-image: url(./../images/Next_Button.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center bottom;
+
+        height: 50px;
+        width: 50px;
     }
 }
 
