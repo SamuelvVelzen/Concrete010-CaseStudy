@@ -2,11 +2,13 @@ var nav = (function() {
     const UIStrings = {
         intro: 'introduction',
         process: 'workprocess',
+        research: 'research',
         results: 'results',
         proto: 'prototyping',
         team: 'team',
         navItems: 'nav_list_item_link',
-        arrow: 'arrow'
+        arrow: 'arrow',
+        workArr: 'workarrow'
     };
 
     var _offsetAnchor = function() {
@@ -37,10 +39,21 @@ var nav = (function() {
     var addEvents = function() {
         const elArr = document.getElementsByClassName(UIStrings.navItems),
             el = document.getElementById(UIStrings.arrow),
-            target = document.getElementById(UIStrings.intro);
+            elArrow = document.getElementById(UIStrings.workArr),
+            target = document.getElementById(UIStrings.intro),
+            targetArrow = document.getElementById(UIStrings.research);
 
         el.addEventListener('click', () => {
             var elTop = target.offsetTop;
+
+            window.scrollTo({
+                top: elTop - 56,
+                behavior: 'smooth'
+            });
+        });
+
+        elArrow.addEventListener('click', () => {
+            var elTop = targetArrow.offsetTop;
 
             window.scrollTo({
                 top: elTop - 56,
