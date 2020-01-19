@@ -5,7 +5,8 @@ var nav = (function() {
         results: 'results',
         proto: 'prototyping',
         team: 'team',
-        navItems: 'nav_list_item_link'
+        navItems: 'nav_list_item_link',
+        arrow: 'arrow'
     };
 
     var _offsetAnchor = function() {
@@ -34,7 +35,18 @@ var nav = (function() {
     };
 
     var addEvents = function() {
-        const elArr = document.getElementsByClassName(UIStrings.navItems);
+        const elArr = document.getElementsByClassName(UIStrings.navItems),
+            el = document.getElementById(UIStrings.arrow),
+            target = document.getElementById(UIStrings.intro);
+
+        el.addEventListener('click', () => {
+            var elTop = target.offsetTop;
+
+            window.scrollTo({
+                top: elTop - 56,
+                behavior: 'smooth'
+            });
+        });
 
         for (let i = 0; i < elArr.length; i++) {
             elArr[i].addEventListener('click', () => {
