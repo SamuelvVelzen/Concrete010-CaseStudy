@@ -139,6 +139,8 @@
     }
 
     .interaction {
+        align-items: flex-start;
+
         .split_right,
         .split_left {
             display: flex;
