@@ -6,6 +6,12 @@
 
     padding-bottom: $spacePer2;
 
+    &.shaddow {
+        .card {
+            box-shadow: 10px -10px $yellow;
+        }
+    }
+
     .card {
         height: fit-content;
         width: 30%;
