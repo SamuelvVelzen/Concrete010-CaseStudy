@@ -31,13 +31,6 @@
     }
 
     .targets {
-        background-image: linear-gradient(
-            to right,
-            rgba($grey, 0.8),
-            rgba($dark, 0.8)
-        );
-        z-index: -1;
-
         img {
             width: 60%;
             height: auto;
@@ -55,13 +48,6 @@
     }
 
     .users {
-        background-image: linear-gradient(
-            to right,
-            rgba($dark, 0.8),
-            rgba($grey, 0.8)
-        );
-        z-index: -1;
-
         img {
             width: 60%;
             height: auto;
