@@ -6,4 +6,8 @@
     background-color: $yellow;
     margin-top: -25px;
     z-index: -1;
+
+    &.dark {
+        background-color: $grey;
+    }
 }
