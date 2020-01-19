@@ -81,3 +81,4 @@ gulp.task('watch', function() {
 
 gulp.task('build', gulp.parallel(styles, images, fonts, js, html, 'watch'));
 gulp.task('prod', gulp.parallel(styles, buildImages, fonts, js, html));
+gulp.task('default', gulp.parallel(styles, buildImages, fonts, js, html));
